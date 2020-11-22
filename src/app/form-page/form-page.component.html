@@ -1,0 +1,88 @@
+<app-header></app-header>
+<div class="container">
+    <ng-container *ngIf="queryParam">
+    <h2 class="question">Crime Report For {{ queryParam }}</h2>
+    <form class="form-horizontal " [formGroup]="questionAccidentFrom">
+        <!-- <div class="form-group">
+            <label class="control-label col-sm-2" for="crimeType">Crime Type:</label>
+            <div class="col-sm-10">
+                <select name="crimeType" formControlName="crimeType" class="form-control" id="crimeType">
+                    <option value="robbery">Robbery</option>
+                    <option value="murder" >Murder </option>
+                    <option value="Figths" >Fight </option>
+                </select>
+            </div>
+        </div> -->
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="area">Area:</label>
+            <div class="col-sm-10">
+                <select name="crimeType" formControlName="area" class="form-control" id="area">
+                    <optgroup label="Zone 1">
+                        <option value="sonegaon">Snegaon</option>
+                        <option value="bajajNagar">BajajNagar</option>
+                        <option value="hingana">Hingana</option>
+                        <option value="wadi">Wadi</option>
+                        <option value="ranaPratapNagar">RanaPratapnagar</option>
+                    </optgroup>
+                    <optgroup label="Zone 2">
+                        <option value="ambazari">Ambazari</option>
+                        <option value="sadar">Sadar</option>
+                        <option value="dhantoli">Dhantoli</option>
+                        <option value="mankapur">Mankapur</option>
+                        <option value="gittikhadan">Gittikhadan</option>
+                        <option value="sitabuldii">Sitabuldi</option>
+                    </optgroup>
+                    <optgroup label="Zone 3">
+                        <option value="panchpaoli">Panchpaoli</option>
+                        <option value="kotwali">Kotwali</option>
+                        <option value="lakadganj">Lakadganj</option>
+                        <option value="tahsil">Tahsil</option>
+                        <option value="ganeshpeth">Ganeshpeth</option>
+                        <option value="shantiNagar">Shanti Nagar</option>
+                    </optgroup>
+                    <optgroup label="Zone 4">
+                        <option value="hudkeshwar">Hudkeshwar</option>
+                        <option value="ajani">Ajani</option>
+                        <option value="imamwada">Imamwada</option>
+                        <option value="sakardara">Sakardara</option>
+                        <option value="nandanwan">Nandanwan</option>
+                        <option value="wathoda">Wathoda</option>
+                        <option value="beltarodi">Beltarodi</option>
+                        <option value="kalamana">Kalamana</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="location">Location:</label>
+          <div class="col-sm-10">
+            <input type="location" formControlName="location" class="form-control" id="location" placeholder="Select Location" name="location">
+          </div>
+        </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="date">Date:</label>
+        <div class="col-sm-10">
+          <input type="date" formControlName="date" class="form-control" id="date" placeholder="Enter email" name="date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="description">Description:</label>
+        <div class="col-sm-10">          
+          <textarea type="text" formControlName="description" rows="5"  class="form-control" id="description" placeholder="Enter description" name="description"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="image">Image:</label>
+        <div class="col-sm-10">          
+          <input type="file" formControlName="image" id="image" name="image">
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-10 col-sm-2 submit">
+          <button type="submit" (click)="formSubmit()" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+    </ng-container>
+  </div>
+  

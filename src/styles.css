@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    /* background-image: linear-gradient(to bottom right, #000428, #020b81); */
+    background-image: linear-gradient(to bottom right, #06070f, #090b25 , #08293b,  #586168);
+    /* background-image: linear-gradient(#09203f  , #537895); */
+    /* background-image: linear-gradient(to bottom right , #aa076b  , #61045f); */
+    min-height: 650px;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: Georgia, serif;
+}

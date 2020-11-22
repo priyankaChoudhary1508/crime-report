@@ -1,0 +1,62 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 main">
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-sm-2">
+            <h3 class="question text-center ">Login</h3>
+            <!-- <img style="height: 50px; margin-bottom: 20px;" src="assets/img/1.jpg" alt=""> -->
+          </div>
+            
+            <!-- <div class="control-label col-sm-3 pd-t-10">
+                <h5 class="mg-l-60" for="email">New Here ? Go to <a routerLink="../register" class="text-white">SignUp</a></h5>
+            </div> -->
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <form class="form-horizontal form" [formGroup]="loginForm">
+            
+              <div class="form-group">
+                <label class="control-label  col-sm-2" for="location">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                </div>
+              </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="password">Password</label>
+              <div class="col-sm-10">
+                <input type="password" formControlName="password" class="form-control" id="password" placeholder="Enter Password" name="password">
+              </div>
+            </div>
+            
+            <div class="form-group">   
+              <div class="col-md-5"></div>     
+              <div class=" col-md-2 submit " >
+                <button type="submit" (click)="goToLogin()" class="btn btn-default">SignIn</button>
+              </div>
+              <div class="col-md-5"></div>
+              <!-- <div class="col-sm-1 submit">
+                <button type="submit" routerLink="../home" class="btn btn-default">Home</button>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <h5 style="margin-left: 41px;  margin-top: 15px">Not A Member Yet? </h5> <a routerLink="../register" style="margin-left: 68px; margin-top: 15px; text-decoration: none" >SignUp</a> 
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </form>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  

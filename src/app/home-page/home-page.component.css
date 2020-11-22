@@ -1,0 +1,68 @@
+.banner{
+    margin-left: 30px;
+    height: 200px;
+}
+.btn{
+    margin-right: 30px;
+}
+.heading{
+    margin-top: 35px;
+}
+.nav-item{
+    color: white;
+    font-size: 20px;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item a:hover{
+    text-decoration: none
+}
+
+li{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    box-shadow: 5px 5px 5px rgb(236, 236, 236);
+}
+.colImage{
+    height: 100px;
+    width: 200px;
+    border-radius: 7px;
+    margin: 30px 15px 20px 15px;
+}
+h4{
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.box{
+    /* background-color: white;
+    border-radius: 7px; */
+    height: 100px;
+    width: 200px;    
+    margin: 30px 15px 20px 15px;
+}
+
+.box:hover{
+    box-shadow: 5px 5px 5px rgb(226, 153, 153);
+    background-color: rgb(141, 22, 22);
+}
